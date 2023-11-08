@@ -1,0 +1,17 @@
+Breakdown of Model structure
+
+Post:
+	id
+	title
+	content
+	user
+	timestamp
+
+user:
+	username
+	email
+	firstname
+	lastname
+	occupation default=non-farmer
+	profile pic
+
