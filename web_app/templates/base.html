@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/main.css" />
+	<title>{{ title }}</title>
+  </head>
+  <body>
+    <!--  THIS IS THE HEADER SECTION -->
+
+    <header>
+      <img src="images/Logo.svg" alt="logo" class="logo" />
+      <nav>
+        <ul>
+          <li class="menu-link"><a href="/home">Home</a></li>
+          <li class="menu-link"><a href="">About</a></li>
+          <li class="menu-link"><a href="">News</a></li>
+          <li class="menu-link"><a href="">Contact</a></li>
+          <li class="menu-link">
+            <a href="/login"><button>Log In</button></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+		{% with messages = get_flashed_messages(with_categories=true) %}
+			{% if messages %}
+			<ul>
+				{% for message in messages %}
+				 <li>{{ message }}</li>
+				{% endfor %}
+			</ul>
+			{% endif %}
+		{% endwith %}
+		{% block content %}
+		{% endblock %}
+
+	    <!--  THIS IS THE FOOTER SECTION -->
+    <footer>
+      <div class="links">
+        <img src="images/Logo.svg" alt="logo" class="logo" />
+        <div class="useful-links">
+          <h3>Useful Links</h3>
+          <a href="http://"><p>Home</p></a>
+          <a href="http://"><p>Agri-News</p></a>
+          <a href="http://"><p>Weather</p></a>
+        </div>
+        <div class="get-help">
+          <h3>Get Help</h3>
+          <p>agrobaord@gmail.com</p>
+          <p>+233 245765540</p>
+          <p>support.agro@gmail.com</p>
+        </div>
+        <div class="social">
+          <h3>Our Social Links</h3>
+          <a href="http://"
+            ><img src="images/Instagram.svg" alt="instagram icon"
+          /></a>
+          <a href="http://"
+            ><img src="images/Facebook.svg" alt="facebook icon"
+          /></a>
+          <a href="http://"
+            ><img src="images/Twitter.svg" alt="twitter icon"
+          /></a>
+          <a href="http://"
+            ><img src="images/LinkedIn.svg" alt="linkedin icon"
+          /></a>
+        </div>
+      </div>
+      <hr />
+      <div class="copyright-terms">
+        <div class="copyright">
+          <p>
+            Copyright © 2023
+            <a href="http://">Agroboard Inc.</a> All Rights Reserved.
+          </p>
+        </div>
+        <div class="terms">
+          <a href="http://"><p>Terms of Use & Privacy Policy</p></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
