@@ -1,0 +1,333 @@
+/* THIS IS A THE GENERAL CSS BEGINNING*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #177c2c;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: #fff;
+  opacity: 0.75;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+h2 {
+  color: #3f9651;
+  font-size: 39.1px;
+  font-weight: 600;
+}
+
+/* THIS IS A THE HEADER SECTION CSS BEGINNING*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #127727;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+  padding: 70px;
+}
+.logo {
+  width: 195px;
+  height: 36px;
+}
+nav {
+  padding-left: 0px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+a:hover {
+  color: aqua;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav > ul > li {
+  padding-right: 32px;
+}
+
+button {
+  border-radius: 43px;
+  stroke: none;
+  width: 200px;
+  height: 36px;
+  border: none;
+  line-height: auto;
+  font-weight: 500;
+  color: #3f9651;
+  font-size: 20px;
+}
+
+/* THIS IS A THE HEADER SECTION CSS ENDING*/
+
+/* THIS IS A THE ARTICLE SECTION CSS BEGINNING*/
+.article {
+  background-color: #fffffff9;
+  height: auto;
+  padding: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.article a img {
+  width: 180px;
+  height: 36px;
+  margin-left: -493px;
+  margin-bottom: 48px;
+}
+
+.article .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.article .heading h1 {
+  color: #3f9651;
+  font-size: 48.83px;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.article .heading p {
+  color: #177c2c;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: -0.18px;
+}
+
+.pubisher-card {
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 150px;
+  margin-top: 36px;
+  margin-bottom: 72px;
+  filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.25));
+}
+
+.pubisher-card img {
+  margin-top: 0px;
+  margin-left: 200px;
+  width: 60px;
+  height: 60px;
+}
+.heading .pubisher-card p {
+  color: #177c2bdf;
+  padding: 8px;
+  padding-bottom: 0;
+  font-size: 14px;
+}
+
+.pubisher-card span {
+  font-size: 16px;
+  color: #0a5619;
+  font-weight: 800;
+}
+
+.article .body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article .body img {
+  width: 80%;
+  height: auto;
+}
+
+.article .body .source {
+  font-style: italic;
+  padding-bottom: 48px;
+  padding-left: 32px;
+}
+
+.article .body p {
+  color: #074c15;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 250%;
+  width: 80%;
+  height: auto;
+  padding-bottom: 100px;
+}
+/* THIS IS A THE NEWSLETTER SECTION CSS BEGINNING*/
+
+.newsletter {
+  background-color: #fff;
+  opacity: 90%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.newsletter p {
+  color: #177c2c;
+  width: 720px;
+  align-items: center;
+  padding: 16px;
+  margin-bottom: 64px;
+  height: 48px;
+  text-align: center;
+  display: block;
+}
+.newsletter h2 {
+  color: #127727;
+}
+
+.newsletter form {
+  background-color: #127727;
+  width: 670px;
+  height: 64px;
+  display: flex;
+  border-radius: 32px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newsletter form .email {
+  background-color: transparent;
+  border: none;
+  margin-left: 48px;
+  height: 32px;
+  width: 300px;
+}
+.newsletter form ::placeholder {
+  color: #fff;
+  opacity: 0.9; /* Firefox */
+}
+
+.newsletter form ::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  outline: none;
+  caret-color: white;
+}
+input,
+select,
+textarea {
+  color: #fff;
+}
+
+.subscribe {
+  background-color: #fff;
+  color: #127727;
+  border: none;
+  border-radius: 32px;
+  margin-right: 16px;
+  width: 220px;
+  height: 42px;
+}
+
+/* THIS IS A THE FOOTER SECTION CSS BEGINNING*/
+
+footer {
+  height: 500px;
+  background-color: #127727;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+footer .links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 148px;
+}
+
+.links .useful-links,
+.links .get-help {
+  margin-right: 64px;
+}
+
+.links .logo {
+  margin-right: 64px;
+  margin-top: -8px;
+}
+
+.links h3 {
+  padding-bottom: 24px;
+}
+
+.links p {
+  font-size: 14px;
+  padding-bottom: 10px;
+  color: #fff;
+  opacity: 0.9;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.links .useful-links p:hover {
+  color: aqua;
+}
+
+footer hr {
+  width: 820px;
+  height: 1px;
+  background-color: #ffffff4a;
+  border: none;
+}
+
+footer .copyright-terms {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright p,
+.copyright a,
+.terms p {
+  font-size: 12px;
+
+  margin-top: 36px;
+  opacity: 0.7;
+}
+
+.copyright p {
+  margin-right: 375px;
+}

@@ -1,0 +1,301 @@
+/* THIS IS A THE GENERAL CSS BEGINNING*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #177c2c;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: #fff;
+  opacity: 0.75;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+h2 {
+  color: #3f9651;
+  font-size: 39.1px;
+  font-weight: 600;
+}
+
+/* THIS IS A THE HEADER SECTION CSS BEGINNING*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #127727;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+  padding: 70px;
+}
+.logo {
+  width: 195px;
+  height: 36px;
+}
+nav {
+  padding-left: 0px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+a:hover {
+  color: aqua;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav > ul > li {
+  padding-right: 32px;
+}
+
+button {
+  border-radius: 43px;
+  stroke: none;
+  width: 200px;
+  height: 36px;
+  border: none;
+  line-height: auto;
+  font-weight: 500;
+  color: #3f9651;
+  font-size: 20px;
+}
+
+/* THIS IS A THE HEADER SECTION CSS ENDING*/
+
+/* THIS IS A THE HERO SECTION CSS BEGINNING*/
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #0f6320;
+  padding: 100px 70px;
+  height: auto;
+}
+
+.hero-text {
+  margin-right: 10px;
+  margin-bottom: 48px;
+}
+.hero-text h1 {
+  color: #fff;
+  font-size: 48.83px;
+  font-weight: 900;
+  width: 572px;
+  line-height: 56px;
+  height: 112px;
+  margin-top: 0;
+}
+
+.hero-text p {
+  color: #fff;
+  opacity: 0.75;
+  font-size: 16px;
+  width: 464px;
+  font-weight: 300;
+  height: 138px;
+  margin-top: 10px;
+  line-height: 24px;
+}
+
+.hero-image img {
+  width: 500px;
+  height: 305px;
+  border-radius: 8px;
+}
+
+.hero-button {
+  margin-top: 8px;
+}
+
+.hero-button .no-fill {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  margin-left: 32px;
+}
+
+/* THIS IS A THE AGRINEWS SECTION CSS BEGINNING*/
+
+.agrinews {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fffffff2;
+  height: auto;
+  padding: 100px;
+  width: 100%;
+}
+
+.agrinews h2 {
+  margin-bottom: 64px;
+}
+
+.article-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.article-cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 130px;
+  width: 30%;
+}
+
+.card img {
+  border-radius: 8px;
+  width: 100%;
+  border: 1px solid #0f632030;
+}
+
+a .publisher {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 70%;
+  height: 84px;
+  padding: 14px 26px;
+  position: absolute;
+  top: 130px;
+  right: 45px;
+  filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.25));
+}
+
+a .publisher:hover h3,
+a .publisher:hover p {
+  color: #ffffff;
+}
+
+a .publisher:hover {
+  background-color: #127727;
+}
+/* 
+.publisher {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 70%;
+  height: 84px;
+  padding: 14px 26px;
+  position: absolute;
+  top: 130px;
+  filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.25));
+} */
+
+.publisher h3 {
+  font-size: 14px;
+  color: #3f9651;
+}
+
+.publisher p {
+  font-size: 12px;
+  color: #3f965094;
+}
+
+.agrinews button {
+  background-color: #fff;
+  border: 1px solid #127727;
+}
+
+.agrinews button:hover {
+  background-color: #127727;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/* THIS IS A THE FOOTER SECTION CSS BEGINNING*/
+
+footer {
+  height: 500px;
+  background-color: #127727;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+footer .links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 148px;
+}
+
+.links .useful-links,
+.links .get-help {
+  margin-right: 64px;
+}
+
+.links .logo {
+  margin-right: 64px;
+  margin-top: -8px;
+}
+
+.links h3 {
+  padding-bottom: 24px;
+}
+
+.links p {
+  font-size: 14px;
+  padding-bottom: 10px;
+  color: #fff;
+  opacity: 0.9;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.links .useful-links p:hover {
+  color: aqua;
+}
+
+footer hr {
+  width: 820px;
+  height: 1px;
+  background-color: #ffffff4a;
+  border: none;
+}
+
+footer .copyright-terms {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright p,
+.copyright a,
+.terms p {
+  font-size: 12px;
+
+  margin-top: 36px;
+  opacity: 0.7;
+}
+
+.copyright p {
+  margin-right: 375px;
+}
