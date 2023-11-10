@@ -1,0 +1,417 @@
+/* THIS IS A THE GENERAL CSS BEGINNING*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #177c2c;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: #fff;
+  opacity: 0.75;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+h2 {
+  color: #3f9651;
+  font-size: 39.1px;
+  font-weight: 600;
+}
+
+/* THIS IS A THE HEADER SECTION CSS BEGINNING*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #127727;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+  padding: 70px;
+}
+.logo {
+  width: 195px;
+  height: 36px;
+}
+nav {
+  padding-left: 0px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+a:hover {
+  color: aqua;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav > ul > li {
+  padding-right: 32px;
+}
+
+button {
+  border-radius: 43px;
+  stroke: none;
+  width: 200px;
+  height: 36px;
+  border: none;
+  line-height: auto;
+  font-weight: 500;
+  color: #3f9651;
+  font-size: 20px;
+}
+
+/* THIS IS A THE HEADER SECTION CSS ENDING*/
+
+/* THIS IS A THE HERO SECTION CSS BEGINNING*/
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #177c2c;
+  padding: 100px 70px;
+  height: auto;
+}
+
+.hero-text {
+  margin-right: 10px;
+  margin-bottom: 48px;
+}
+.hero-text h1 {
+  color: #fff;
+  font-size: 48.83px;
+  font-weight: 900;
+  width: 572px;
+  line-height: 56px;
+  height: 112px;
+  margin-top: 0;
+}
+
+.hero-text p {
+  color: #fff;
+  opacity: 0.75;
+  font-size: 16px;
+  width: 464px;
+  font-weight: 300;
+  height: 138px;
+  margin-top: 10px;
+  line-height: 24px;
+}
+
+.hero-image img {
+  width: 500px;
+  height: 305px;
+  border-radius: 8px;
+}
+
+.hero-button {
+  margin-top: 8px;
+}
+
+.hero-button .no-fill {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  margin-left: 32px;
+}
+
+/* THIS IS A THE PRODUCTS SECTION CSS BEGINNING*/
+
+.products {
+  background-color: #fff;
+  background-size: cover;
+  height: auto;
+  min-width: 100%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-h2 {
+  color: #3f9651;
+  font-size: 39.1px;
+  font-weight: 600;
+  margin: 64px auto;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  margin-left: 70px;
+}
+
+.card {
+  width: 450px;
+  height: 500px;
+  border-radius: 36px;
+  background: #177c2c;
+  margin-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px;
+  margin-right: 64px;
+}
+
+.card img {
+  width: 250px;
+  height: 260px;
+}
+.card p {
+  width: 250px;
+  margin: 0;
+  margin-top: 10px;
+}
+.card h2 {
+  color: #fff;
+  font-size: 28px;
+  margin: 0;
+  padding-top: 10px;
+}
+.card button {
+  margin-top: 8px;
+}
+
+.cards .linking-image {
+  position: absolute;
+  z-index: 99;
+  top: 480px;
+  left: 465px;
+}
+.linking-image img {
+  width: 200px;
+  height: 200px;
+}
+
+/* THIS IS A THE PRODUCTS SECTION CSS ENDING*/
+
+/* THIS IS A THE TESTIMONIAL SECTION CSS BEGINNING*/
+.testimonial {
+  background-color: #177c2c;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.testimonial h2 {
+  color: #fff;
+  margin: 48px auto;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  height: auto;
+  padding: 100px 64px;
+  width: 70%;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-card img {
+  height: 280px;
+  width: 260px;
+  margin-left: 100px;
+}
+
+.testimonial-card p {
+  line-height: auto;
+  font-weight: 500;
+  color: #177c2c;
+  font-size: 20px;
+}
+
+.testimonial-card p span {
+  padding-top: 24px;
+  color: #177c2c;
+  display: block;
+
+  line-height: 32px;
+  font-weight: 800;
+}
+
+.testimonial-text {
+  margin-left: 70px;
+  margin-top: -38px;
+  padding: 16px;
+  width: 420px;
+}
+
+/* THIS IS A THE NEWSLETTER SECTION CSS BEGINNING*/
+
+.newsletter {
+  background-color: #fff;
+  opacity: 90%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 48px;
+  padding-top: 64px;
+}
+
+.newsletter p {
+  color: #177c2c;
+  width: 720px;
+  align-items: center;
+  padding: 16px;
+  margin-bottom: 64px;
+  height: 48px;
+  text-align: center;
+  display: block;
+}
+.newsletter h2 {
+  color: #127727;
+}
+
+.newsletter form {
+  background-color: #127727;
+  width: 670px;
+  height: 64px;
+  display: flex;
+  border-radius: 32px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newsletter form .email {
+  background-color: transparent;
+  border: none;
+  margin-left: 48px;
+  height: 32px;
+  width: 300px;
+}
+.newsletter form ::placeholder {
+  color: #fff;
+  opacity: 0.9; /* Firefox */
+}
+
+.newsletter form ::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  outline: none;
+  caret-color: white;
+}
+input,
+select,
+textarea {
+  color: #fff;
+}
+
+.subscribe {
+  background-color: #fff;
+  color: #127727;
+  border: none;
+  border-radius: 32px;
+  margin-right: 16px;
+  width: 220px;
+  height: 42px;
+}
+
+/* THIS IS A THE FOOTER SECTION CSS BEGINNING*/
+
+footer {
+  height: 500px;
+  background-color: #127727;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+footer .links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 148px;
+}
+
+.links .useful-links,
+.links .get-help {
+  margin-right: 64px;
+}
+
+.links .logo {
+  margin-right: 64px;
+  margin-top: -8px;
+}
+
+.links h3 {
+  padding-bottom: 24px;
+}
+
+.links p {
+  font-size: 14px;
+  padding-bottom: 10px;
+  color: #fff;
+  opacity: 0.9;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.links .useful-links p:hover {
+  color: aqua;
+}
+
+footer hr {
+  width: 820px;
+  height: 1px;
+  background-color: #ffffff4a;
+  border: none;
+}
+
+footer .copyright-terms {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright p,
+.copyright a,
+.terms p {
+  font-size: 12px;
+
+  margin-top: 36px;
+  opacity: 0.7;
+}
+
+.copyright p {
+  margin-right: 375px;
+}
