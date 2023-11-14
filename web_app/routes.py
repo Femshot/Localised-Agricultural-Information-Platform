@@ -29,4 +29,8 @@ def news():
 
 @app.route('/weather')
 def weather():
-    return render_template('weather.html', title="Weather Forcast")
+    return render_template('weather.html', title="Agroboard | Weather Forcast")
+
+@app.route('/article')
+def article():
+    return render_template('article.html')

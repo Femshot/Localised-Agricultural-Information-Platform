@@ -3,24 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="article.css" />
-    <title>Agroboard | Smart Decisions</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='article.css') }}" />
+    <title>Agroboard | Articles</title>
   </head>
   <body>
     <!--  THIS IS THE HEADER SECTION -->
 
     <header>
-      <a href="index.html"
-        ><img src="images/Logo.svg" alt="logo" class="logo"
+      <a href="/home"
+		 ><img src="{{ url_for('static', filename='images/Logo.svg') }}" alt="logo" class="logo"
       /></a>
       <nav>
         <ul>
-          <li class="menu-link"><a href="index.html">Home</a></li>
-          <li class="menu-link"><a href="about.html">About</a></li>
-          <li class="menu-link"><a href="news.html">News</a></li>
+          <li class="menu-link"><a href="/home">Home</a></li>
+          <li class="menu-link"><a href="/about">About</a></li>
+          <li class="menu-link"><a href="/news">News</a></li>
           <li class="menu-link"><a href="#get-help">Contact</a></li>
           <li class="menu-link">
-            <a href=""><button>Log In</button></a>
+            <a href="/login"><button>Log In</button></a>
           </li>
         </ul>
       </nav>
@@ -29,8 +29,8 @@
     <!--  THIS IS THE HERO SECTION -->
 
     <section class="article">
-      <a href="news.html"
-        ><img src="images/back button.png" alt="back button icon"
+      <a href="/news"
+		 ><img src="{{ url_for('static', filename='images/back button.png') }}" alt="back button icon"
       /></a>
       <div class="heading">
         <h1>Do farmers deserve more in society?</h1>
@@ -38,12 +38,12 @@
         <div class="pubisher-card">
           <p>Publisher: <span>Ing. E. Quansah</span></p>
           <p>Published Oct. 5, 2023</p>
-          <img src="images/publisher.png" alt="publisher of article image" />
+		  <img src="{{ url_for('static', filename='images/publisher.png') }}" alt="publisher of article image" />
         </div>
       </div>
       <div class="body">
         <img
-          src="news images/Mask group-1.png"
+			src="{{ url_for('static', filename='images/Mask group-1.png') }}"
           alt="farmer harvesting in field"
         />
         <p class="source">Farmer smiling in field. Source: Amsterdam</p>
@@ -68,7 +68,7 @@
           Ipsum.
         </p>
         <img
-          src="news images/Mask group-6.png"
+			src="{{ url_for('static', filename='images/Mask group-6.png') }}"
           alt="group of farmers if field working"
         />
         <p class="source">
@@ -124,14 +124,14 @@
 
     <footer>
       <div class="links">
-        <a href="index.html"
-          ><img src="images/Logo.svg" alt="logo" class="logo"
+        <a href="/home"
+		   ><img src="{{ url_for('static', filename='images/Logo.svg') }}" alt="logo" class="logo"
         /></a>
         <div class="useful-links">
           <h3>Useful Links</h3>
-          <a href="index.html"><p>Home</p></a>
-          <a href="news.html"><p>Agri-News</p></a>
-          <a href="weather.html"><p>Weather</p></a>
+          <a href="/home"><p>Home</p></a>
+          <a href="/news"><p>Agri-News</p></a>
+          <a href="/weather"><p>Weather</p></a>
         </div>
         <div class="get-help" id="get-help">
           <h3>Get Help</h3>
@@ -142,16 +142,16 @@
         <div class="social">
           <h3>Our Social Links</h3>
           <a href="http://www.instagram.com"
-            ><img src="images/Instagram.svg" alt="instagram icon"
+			 ><img src="{{ url_for('static', filename='images/Instagram.svg') }}" alt="instagram icon"
           /></a>
           <a href="http://www.facebook.com"
-            ><img src="images/Facebook.svg" alt="facebook icon"
+			 ><img src="{{ url_for('static', filename='images/Facebook.svg') }}" alt="facebook icon"
           /></a>
           <a href="http://www.twitter.com"
-            ><img src="images/Twitter.svg" alt="twitter icon"
+			 ><img src="{{ url_for('static', filename='images/Twitter.svg') }}" alt="twitter icon"
           /></a>
           <a href="http://www.linkedin.com"
-            ><img src="images/LinkedIn.svg" alt="linkedin icon"
+			 ><img src="{{ url_for('static', filename='images/LinkedIn.svg') }}" alt="linkedin icon"
           /></a>
         </div>
       </div>
@@ -160,7 +160,7 @@
         <div class="copyright">
           <p>
             Copyright © 2023
-            <a href="index.html">Agroboard Inc.</a> All Rights Reserved.
+            <a href="/home">Agroboard Inc.</a> All Rights Reserved.
           </p>
         </div>
         <div class="terms">
