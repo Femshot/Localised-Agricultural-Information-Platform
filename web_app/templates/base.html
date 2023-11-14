@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/static/main.css" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
 	<title>{{ title }}</title>
   </head>
   <body>
     <!--  THIS IS THE HEADER SECTION -->
 
     <header>
-      <img src="images/Logo.svg" alt="logo" class="logo" />
+		<img src="{{ url_for('static', filename='images/Logo.svg') }}" alt="logo" class="logo" />
       <nav>
         <ul>
           <li class="menu-link"><a href="/home">Home</a></li>
-          <li class="menu-link"><a href="">About</a></li>
-          <li class="menu-link"><a href="">News</a></li>
+          <li class="menu-link"><a href="/about">About</a></li>
+          <li class="menu-link"><a href="/news">News</a></li>
           <li class="menu-link"><a href="">Contact</a></li>
           <li class="menu-link">
             <a href="/login"><button>Log In</button></a>
@@ -38,7 +38,7 @@
 	    <!--  THIS IS THE FOOTER SECTION -->
     <footer>
       <div class="links">
-        <img src="images/Logo.svg" alt="logo" class="logo" />
+        <img src="{{ url_for('static', filename='images/Logo.svg') }}" alt="logo" class="logo" />
         <div class="useful-links">
           <h3>Useful Links</h3>
           <a href="http://"><p>Home</p></a>
@@ -54,16 +54,16 @@
         <div class="social">
           <h3>Our Social Links</h3>
           <a href="http://"
-            ><img src="images/Instagram.svg" alt="instagram icon"
+            ><img src="{{ url_for('static', filename='images/Instagram.svg') }}" alt="instagram icon"
           /></a>
           <a href="http://"
-            ><img src="images/Facebook.svg" alt="facebook icon"
+            ><img src="{{ url_for('static', filename='images/Facebook.svg') }}" alt="facebook icon"
           /></a>
           <a href="http://"
-            ><img src="images/Twitter.svg" alt="twitter icon"
+            ><img src="{{ url_for('static', filename='images/Twitter.svg') }}" alt="twitter icon"
           /></a>
           <a href="http://"
-            ><img src="images/LinkedIn.svg" alt="linkedin icon"
+            ><img src="{{ url_for('static', filename='images/LinkedIn.svg') }}" alt="linkedin icon"
           /></a>
         </div>
       </div>

@@ -14,12 +14,12 @@
           information.
         </p>
         <div class="hero-button">
-          <a href=""><button>Weather Forecast</button></a>
+          <a href="/weather"><button>Weather Forecast</button></a>
           <a href=""><button class="no-fill">Agri-News</button></a>
         </div>
       </div>
       <div class="hero-image">
-        <img src="images/hero-image.png" alt="hero image of farmer in field" />
+		  <img src="{{ url_for('static', filename='images/hero-image.png') }}" alt="hero image of farmer in field" />
       </div>
     </section>
 
@@ -29,10 +29,11 @@
       <h2 class="section-h2">How agroboard helps you thrive</h2>
       <div class="cards">
         <div class="linking-image">
-          <img src="images/mid-ring.svg" alt="circular-ring-link" />
+			<img src="{{ url_for('static', filename='images/mid-ring.svg') }}" alt="circular-ring-link" />
         </div>
         <div class="card left">
-          <img src="images/data-analysis.svg" alt="data-analysis" />
+			<img src="{{ url_for('static', filename='images/data-analysis.svg')
+					  }}" alt="data-analysis" />
 
           <h2>data driven info</h2>
           <p>
@@ -42,7 +43,8 @@
           </p>
         </div>
         <div class="card">
-          <img src="images/weather-forecast.svg" alt="weather" />
+          <img src="{{ url_for('static', filename='images/weather-forecast.svg')
+					}}" alt="weather" />
 
           <h2>weather forecast</h2>
           <p>
@@ -53,7 +55,7 @@
           <a href=""><button>Weather Forecast</button></a>
         </div>
         <div class="card left">
-          <img src="images/data-visual.svg" alt="data-visualization" />
+			<img src="{{ url_for('static', filename='images/data-visual.svg') }}" alt="data-visualization" />
 
           <h2>insight analytics</h2>
           <p>
@@ -63,7 +65,7 @@
           </p>
         </div>
         <div class="card">
-          <img src="images/scientist.svg" alt="expert-analysis" />
+			<img src="{{ url_for('static', filename='images/scientist.svg') }}" alt="expert-analysis" />
 
           <h2>expert info</h2>
           <p>
@@ -81,7 +83,8 @@
     <section class="testimonial">
       <h2>What our customers say</h2>
       <div class="testimonial-card">
-        <img src="images/testimonial-image.png" alt="testimonial person" />
+        <img src="{{ url_for('static', filename='images/testimonial-image.png')
+				  }}" alt="testimonial person" />
         <div class="testimonial-text">
           <p>
             “Agroboard is such a useful source of quality and trusted

@@ -3,24 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="about.css" />
-    <title>Agroboard | Smart Decisions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}" />
+    <title>Agroboard | About</title>
   </head>
   <body>
     <!--  THIS IS THE HEADER SECTION -->
 
     <header>
       <a href="index.html"
-        ><img src="images/Logo.svg" alt="logo" class="logo"
+        ><img src="{{ url_for('static', filename='images/Logo.svg') }}" alt="logo" class="logo"
       /></a>
       <nav>
         <ul>
-          <li class="menu-link"><a href="index.html">Home</a></li>
-          <li class="menu-link"><a href="about.html">About</a></li>
-          <li class="menu-link"><a href="news.html">News</a></li>
-          <li class="menu-link"><a href="#get-help">Contact</a></li>
+          <li class="menu-link"><a href="/home">Home</a></li>
+          <li class="menu-link"><a href="/about">About</a></li>
+          <li class="menu-link"><a href="/news">News</a></li>
+          <li class="menu-link"><a href="">Contact</a></li>
           <li class="menu-link">
-            <a href=""><button>Log In</button></a>
+            <a href="/login"><button>Log In</button></a>
           </li>
         </ul>
       </nav>
@@ -32,7 +32,7 @@
       <h1>
         Our mission is to enable smart and intelligent decision by farmers.
       </h1>
-      <img src="images/svg mission.svg" alt="mission svg icon rocket" />
+	  <img src="{{ url_for('static', filename='images/svg mission.svg') }}" alt="mission svg icon rocket" />
     </section>
 
     <!--  THIS IS THE TEAM SECTION -->
@@ -40,22 +40,22 @@
       <h2 class="team-heading">Meet the Team</h2>
       <div class="cards">
         <div class="card">
-          <img src="images/Herman.png" alt="expert-analysis" />
+			<img src="{{ url_for('static', filename='images/Herman.png') }}" alt="expert-analysis" />
           <h2>Herman Skray</h2>
           <p>Fullstack Engineer</p>
         </div>
         <div class="card">
-          <img src="images/Theo.png" alt="expert-analysis" />
+			<img src="{{ url_for('static', filename='images/Theo.png') }}" alt="expert-analysis" />
           <h2>Herman Skray</h2>
           <p>Fullstack Engineer</p>
         </div>
         <div class="card">
-          <img src="images/Femi.png" alt="expert-analysis" />
+			<img src="{{ url_for('static', filename='images/Femi.png') }}" alt="expert-analysis" />
           <h2>Herman Skray</h2>
           <p>Fullstack Engineer</p>
         </div>
         <div class="card">
-          <img src="images/Jack.png" alt="expert-analysis" />
+			<img src="{{ url_for('static', filename='images/Jack.png') }}" alt="expert-analysis" />
           <h2>Herman Skray</h2>
           <p>Fullstack Engineer</p>
         </div>
@@ -89,7 +89,7 @@
     <footer>
       <div class="links">
         <a href="index.html"
-          ><img src="images/Logo.svg" alt="logo" class="logo"
+          ><img src="{{ url_for('static', filename='images/Logo.svg') }}" alt="logo" class="logo"
         /></a>
         <div class="useful-links">
           <h3>Useful Links</h3>
@@ -106,16 +106,16 @@
         <div class="social">
           <h3>Our Social Links</h3>
           <a href="http://www.instagram.com"
-            ><img src="images/Instagram.svg" alt="instagram icon"
+            ><img src="{{ url_for('static', filename='images/Instagram.svg') }}" alt="instagram icon"
           /></a>
           <a href="http://www.facebook.com"
-            ><img src="images/Facebook.svg" alt="facebook icon"
+            ><img src="{{ url_for('static', filename='images/Facebook.svg') }}" alt="facebook icon"
           /></a>
           <a href="http://www.twitter.com"
-            ><img src="images/Twitter.svg" alt="twitter icon"
+            ><img src="{{ url_for('static', filename='images/Twitter.svg') }}" alt="twitter icon"
           /></a>
           <a href="http://www.linkedin.com"
-            ><img src="images/LinkedIn.svg" alt="linkedin icon"
+            ><img src="{{ url_for('static', filename='images/LinkedIn.svg') }}" alt="linkedin icon"
           /></a>
         </div>
       </div>

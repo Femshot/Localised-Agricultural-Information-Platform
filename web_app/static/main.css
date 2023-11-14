@@ -32,15 +32,12 @@ h2 {
 
 header {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   background-color: #127727;
-  min-width: 100%;
-  float: left;
-  padding-left: 70px;
-  margin: 0 auto;
   align-items: center;
   height: 120px;
-  margin-bottom: 100px;
+  width: 100%;
+  padding: 70px;
 }
 .logo {
   width: 195px;
@@ -52,11 +49,10 @@ nav {
 
 nav > ul {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   list-style-type: none;
-  padding-left: 390px;
+  padding-left: 20px;
 }
 
 a {
@@ -93,13 +89,17 @@ button {
 /* THIS IS A THE HERO SECTION CSS BEGINNING*/
 .hero-section {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 100%;
-  padding-left: 70px;
-  margin-bottom: 200px;
+  background-color: #177c2c;
+  padding: 100px 70px;
+  height: auto;
 }
 
 .hero-text {
-  margin-right: 78px;
+  margin-right: 10px;
+  margin-bottom: 48px;
 }
 .hero-text h1 {
   color: #fff;
@@ -214,12 +214,13 @@ button {
 /* THIS IS A THE TESTIMONIAL SECTION CSS BEGINNING*/
 .testimonial {
   background-color: #177c2c;
-  height: 700px;
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 100px;
 }
 
 .testimonial h2 {
@@ -229,8 +230,9 @@ button {
 
 .testimonial-card {
   background-color: #fff;
-  width: 1000px;
-  height: 450px;
+  height: auto;
+  padding: 100px 64px;
+  width: 70%;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -261,8 +263,63 @@ button {
 
 .testimonial-text {
   margin-left: 70px;
-  margin-top: -78px;
+  margin-top: -38px;
+  padding: 16px;
   width: 420px;
+}
+
+/* THIS IS A THE WEATHER SECTION CSS BEGINNING*/
+.weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  padding: 100px;
+  padding-bottom: 150px;
+}
+
+.weather .heading h1 {
+  color: #127727;
+  text-align: center;
+  font-weight: 900;
+  font-size: 48.83px;
+  line-height: 64px;
+  margin-bottom: 64px;
+}
+
+.weather-dashboard img {
+  height: auto;
+  width: 90%;
+  border-radius: 36px;
+  margin-left: 64px;
+}
+
+.time-forecast {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #127727;
+  border-radius: 12px;
+  margin-top: 36px;
+  padding: 16px 48px;
+}
+
+.time-forecast h2 {
+  color: #fff;
+  display: block;
+}
+
+.time-forecast a:hover,
+.time-forecast h2:hover {
+  background-color: #fff;
+  color: #177c2c;
+  border-radius: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* THIS IS A THE NEWSLETTER SECTION CSS BEGINNING*/
