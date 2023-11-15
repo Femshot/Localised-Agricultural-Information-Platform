@@ -3,14 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
-	<title>{{ title }}</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='main.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='login.css') }}"
+    />
+    <title>{{ title }}</title>
   </head>
   <body>
     <!--  THIS IS THE HEADER SECTION -->
 
     <header>
-		<img src="{{ url_for('static', filename='images/Logo.svg') }}" alt="logo" class="logo" />
+      <img
+        src="{{ url_for('static', filename='images/Logo.svg') }}"
+        alt="logo"
+        class="logo"
+      />
       <nav>
         <ul>
           <li class="menu-link"><a href="/home">Home</a></li>
@@ -23,22 +34,23 @@
         </ul>
       </nav>
     </header>
-		{% with messages = get_flashed_messages(with_categories=true) %}
-			{% if messages %}
-			<ul>
-				{% for message in messages %}
-				 <li>{{ message }}</li>
-				{% endfor %}
-			</ul>
-			{% endif %}
-		{% endwith %}
-		{% block content %}
-		{% endblock %}
+    {% with messages = get_flashed_messages(with_categories=true) %} {% if
+    messages %}
+    <ul>
+      {% for message in messages %}
+      <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %} {% endwith %} {% block content %} {% endblock %}
 
-	    <!--  THIS IS THE FOOTER SECTION -->
+    <!--  THIS IS THE FOOTER SECTION -->
     <footer>
       <div class="links">
-        <img src="{{ url_for('static', filename='images/Logo.svg') }}" alt="logo" class="logo" />
+        <img
+          src="{{ url_for('static', filename='images/Logo.svg') }}"
+          alt="logo"
+          class="logo"
+        />
         <div class="useful-links">
           <h3>Useful Links</h3>
           <a href="/home"><p>Home</p></a>
@@ -54,16 +66,24 @@
         <div class="social">
           <h3>Our Social Links</h3>
           <a href="http://"
-            ><img src="{{ url_for('static', filename='images/Instagram.svg') }}" alt="instagram icon"
+            ><img
+              src="{{ url_for('static', filename='images/Instagram.svg') }}"
+              alt="instagram icon"
           /></a>
           <a href="http://"
-            ><img src="{{ url_for('static', filename='images/Facebook.svg') }}" alt="facebook icon"
+            ><img
+              src="{{ url_for('static', filename='images/Facebook.svg') }}"
+              alt="facebook icon"
           /></a>
           <a href="http://"
-            ><img src="{{ url_for('static', filename='images/Twitter.svg') }}" alt="twitter icon"
+            ><img
+              src="{{ url_for('static', filename='images/Twitter.svg') }}"
+              alt="twitter icon"
           /></a>
           <a href="http://"
-            ><img src="{{ url_for('static', filename='images/LinkedIn.svg') }}" alt="linkedin icon"
+            ><img
+              src="{{ url_for('static', filename='images/LinkedIn.svg') }}"
+              alt="linkedin icon"
           /></a>
         </div>
       </div>
