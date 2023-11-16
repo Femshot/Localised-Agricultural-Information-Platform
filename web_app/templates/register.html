@@ -1,11 +1,20 @@
 {% extends 'base.html' %}
-<!-- Make div to style login form section -->
+<!-- Make div to style Register form section -->
 {% block content %}
 <section class="login">
-  <h1>Log In</h1>
+  <h1>Register</h1>
 
   <form action="" method="post" class="login-form" novalidate>
     {{ form.hidden_tag() }}
+	<div class="labels">
+      <p>
+        {{ form.username.label }}<br />
+        {{ form.username(size=32) }}
+		{% for error in form.username.errors %}
+		<span style="color: red;">[{{ error }}]</span>
+		{% endfor %}
+      </p>
+    </div>
     <div class="labels">
       <p>
         {{ form.email.label }}<br />
@@ -25,9 +34,15 @@
       </p>
     </div>
     <div class="labels">
-      <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
+      <p>
+        {{ form.confirm_password.label }}<br />
+        {{ form.confirm_password(size=32) }}
+		{% for error in form.confirm_password.errors %}
+		<span style="color: red;">[{{ error }}]</span>
+		{% endfor %}
+      </p>
     </div>
-    <div class="labels"><p>{{ form.submit() }}</p></div>
+	<div class="labels"><p>{{ form.submit() }}</p></div>
   </form>
 </section>
 
