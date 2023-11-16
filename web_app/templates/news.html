@@ -10,17 +10,21 @@
     <!--  THIS IS THE HEADER SECTION -->
 
     <header>
-      <a href="/home"
+      <a href="{{ url_for('home') }}"
         ><img src="{{ url_for('static', filename='images/Logo.svg') }}" alt="logo" class="logo"
       /></a>
       <nav>
         <ul>
-          <li class="menu-link"><a href="/home">Home</a></li>
-          <li class="menu-link"><a href="/about">About</a></li>
-          <li class="menu-link"><a href="/news">News</a></li>
+          <li class="menu-link"><a href="{{ url_for('home') }}">Home</a></li>
+          <li class="menu-link"><a href="{{ url_for('about') }}">About</a></li>
+          <li class="menu-link"><a href="{{ url_for('news') }}">News</a></li>
           <li class="menu-link"><a href="">Contact</a></li>
           <li class="menu-link">
-            <a href="/login"><button>Log In</button></a>
+			{% if current_user.is_anonymous %}
+			<a href="{{ url_for('login') }}"><button>Log In</button></a>
+			{% else %}
+			<a href="{{ url_for('logout') }}"><button>Log Out</button></a>
+			{% endif %}
           </li>
         </ul>
       </nav>
@@ -37,8 +41,8 @@
           current info in order to make the right decisions today.
         </p>
         <div class="hero-button">
-          <a href="/weather"><button>Weather Forecast</button></a>
-          <a href="/news"><button class="no-fill">Agri-News</button></a>
+          <a href="{{ url_for('weather') }}"><button>Weather Forecast</button></a>
+          <a href="{{ url_for('news') }}"><button class="no-fill">Agri-News</button></a>
         </div>
       </div>
       <div class="hero-image">
@@ -56,7 +60,7 @@
       <div class="article-cards">
         <div class="card">
 			<img src="{{ url_for('static', filename='images/3-1.png') }}" alt="" />
-          <a href="article.html"
+          <a href="{{ url_for('article') }}"
             ><div class="publisher">
               <h3>Farm to Fork: Is it real?</h3>
               <p>Published Jan. 20, 2023.</p>
@@ -65,7 +69,7 @@
         </div>
         <div class="card">
           <img src="{{ url_for('static', filename='images/3-2.png') }}" alt="" />
-          <a href="article.html"
+          <a href="{{ url_for('article') }}"
             ><div class="publisher">
               <h3>Backyard gardening, a guide</h3>
               <p>Published Jun. 3, 2023.</p>
@@ -178,14 +182,14 @@
 
     <footer>
       <div class="links">
-        <a href="/home"
+        <a href="{{ url_for('home') }}"
           ><img src="{{ url_for('static', filename='images/Logo.svg') }}" alt="logo" class="logo"
         /></a>
         <div class="useful-links">
           <h3>Useful Links</h3>
-          <a href="/home"><p>Home</p></a>
-          <a href="/news"><p>Agri-News</p></a>
-          <a href="/weather"><p>Weather</p></a>
+          <a href="{{ url_for('home') }}"><p>Home</p></a>
+          <a href="{{ url_for('news') }}"><p>Agri-News</p></a>
+          <a href="{{ url_for('weather') }}"><p>Weather</p></a>
         </div>
         <div class="get-help" id="get-help">
           <h3>Get Help</h3>
@@ -214,7 +218,7 @@
         <div class="copyright">
           <p>
             Copyright © 2023
-            <a href="/home">Agroboard Inc.</a> All Rights Reserved.
+            <a href="{{ url_for('home') }}">Agroboard Inc.</a> All Rights Reserved.
           </p>
         </div>
         <div class="terms">
