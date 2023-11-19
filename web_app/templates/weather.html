@@ -1,48 +1,44 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block content %}
+<!--  THIS IS THE WEATHER SECTION -->
 
-	{% block content %}
-    <!--  THIS IS THE WEATHER SECTION -->
+<section class="weather">
+  <div class="heading">
+    <h1>Smart and Real Time Weather Forecast</h1>
+  </div>
+  <div class="weather-dashboard">
+    <img
+      src="{{ url_for('static', filename='images/weather placeholder.png') }}"
+      alt="weather dashboard image"
+    />
+  </div>
+  <div class="time-forecast">
+    <a href="#"><h2>Hour</h2></a>
+    <a href="#"><h2>Day</h2></a>
+    <a href="#"><h2>Week</h2></a>
+    <a href="#"><h2>Month</h2></a>
+    <a href="#"><h2>Year</h2></a>
+  </div>
+</section>
 
-    <section class="weather">
-      <div class="heading">
-        <h1>Smart and Real Time Weather Forecast</h1>
-      </div>
-      <div class="weather-dashboard">
-        <img
-			src="{{ url_for('static', filename='images/weather placeholder.png') }}"
-          alt="weather dashboard image"
-        />
-      </div>
-      <div class="time-forecast">
-        <a href="#"><h2>Hour</h2></a>
-        <a href="#"><h2>Day</h2></a>
-        <a href="#"><h2>Week</h2></a>
-        <a href="#"><h2>Month</h2></a>
-        <a href="#"><h2>Year</h2></a>
-      </div>
-    </section>
+<!--  THIS IS THE NEWSLETTER SECTION -->
+<section class="newsletter">
+  <h2>Subscribe to our Newsletter</h2>
+  <p>
+    Consider subscribing to our weekly newsletter. Get notified when news and
+    articles and reports are updated and rolled out to never miss a thing.
+  </p>
+  <form action="" method="get" class="subscribe-form">
+    <label for="email"
+      ><input
+        type="email"
+        class="email"
+        required
+        placeholder="enter your email address......."
+    /></label>
+    <label for="subscribe"
+      ><input type="submit" class="subscribe" value="Subscribe"
+    /></label>
+  </form>
+</section>
 
-    <!--  THIS IS THE NEWSLETTER SECTION -->
-    <section class="newsletter">
-      <h2>Subscribe to our Newsletter</h2>
-      <p>
-        Consider subscribing to our weekly newsletter. Get notified when news
-        and articles and reports are updated and rolled out to never miss a
-        thing.
-      </p>
-      <form action="" method="get" class="subscribe-form">
-        <label for="email"
-          ><input
-            type="email"
-            class="email"
-            required
-            placeholder="enter your email address......."
-        /></label>
-        <label for="subscribe"
-          ><input type="submit" class="subscribe" value="Subscribe"
-        /></label>
-      </form>
-    </section>
-
-	{% endblock content %}
-
+{% endblock content %}

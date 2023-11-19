@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='about.css') }}"
+    />
     <title>Agroboard | About</title>
   </head>
   <body>
@@ -11,20 +14,23 @@
 
     <header>
       <a href="{{ url_for('home') }}"
-        ><img src="{{ url_for('static', filename='images/Logo.svg') }}" alt="logo" class="logo"
+        ><img
+          src="{{ url_for('static', filename='images/Logo.svg') }}"
+          alt="logo"
+          class="logo"
       /></a>
       <nav>
         <ul>
           <li class="menu-link"><a href="{{ url_for('home') }}">Home</a></li>
           <li class="menu-link"><a href="{{ url_for('about') }}">About</a></li>
           <li class="menu-link"><a href="{{ url_for('news') }}">News</a></li>
-          <li class="menu-link"><a href="">Contact</a></li>
+          <li class="menu-link"><a href="#get-help">Contact</a></li>
           <li class="menu-link">
-			{% if current_user.is_anonymous %}
-			<a href="{{ url_for('login') }}"><button>Log In</button></a>
-			{% else %}
-			<a href="{{ url_for('logout') }}"><button>Log Out</button></a>
-			{% endif %}
+            {% if current_user.is_anonymous %}
+            <a href="{{ url_for('login') }}"><button>Log In</button></a>
+            {% else %}
+            <a href="{{ url_for('logout') }}"><button>Log Out</button></a>
+            {% endif %}
           </li>
         </ul>
       </nav>
@@ -36,7 +42,10 @@
       <h1>
         Our mission is to enable smart and intelligent decision by farmers.
       </h1>
-	  <img src="{{ url_for('static', filename='images/svg mission.svg') }}" alt="mission svg icon rocket" />
+      <img
+        src="{{ url_for('static', filename='images/svg mission.svg') }}"
+        alt="mission svg icon rocket"
+      />
     </section>
 
     <!--  THIS IS THE TEAM SECTION -->
@@ -44,22 +53,34 @@
       <h2 class="team-heading">Meet the Team</h2>
       <div class="cards">
         <div class="card">
-			<img src="{{ url_for('static', filename='images/Herman.png') }}" alt="expert-analysis" />
+          <img
+            src="{{ url_for('static', filename='images/Herman.png') }}"
+            alt="expert-analysis"
+          />
           <h2>Herman Skray</h2>
           <p>Fullstack Engineer</p>
         </div>
         <div class="card">
-			<img src="{{ url_for('static', filename='images/Theo.png') }}" alt="expert-analysis" />
+          <img
+            src="{{ url_for('static', filename='images/Theo.png') }}"
+            alt="expert-analysis"
+          />
           <h2>Herman Skray</h2>
           <p>Fullstack Engineer</p>
         </div>
         <div class="card">
-			<img src="{{ url_for('static', filename='images/Femi.png') }}" alt="expert-analysis" />
+          <img
+            src="{{ url_for('static', filename='images/Femi.png') }}"
+            alt="expert-analysis"
+          />
           <h2>Herman Skray</h2>
           <p>Fullstack Engineer</p>
         </div>
         <div class="card">
-			<img src="{{ url_for('static', filename='images/Jack.png') }}" alt="expert-analysis" />
+          <img
+            src="{{ url_for('static', filename='images/Jack.png') }}"
+            alt="expert-analysis"
+          />
           <h2>Herman Skray</h2>
           <p>Fullstack Engineer</p>
         </div>
@@ -93,7 +114,10 @@
     <footer>
       <div class="links">
         <a href="/home"
-          ><img src="{{ url_for('static', filename='images/Logo.svg') }}" alt="logo" class="logo"
+          ><img
+            src="{{ url_for('static', filename='images/Logo.svg') }}"
+            alt="logo"
+            class="logo"
         /></a>
         <div class="useful-links">
           <h3>Useful Links</h3>
@@ -110,16 +134,24 @@
         <div class="social">
           <h3>Our Social Links</h3>
           <a href="http://www.instagram.com"
-            ><img src="{{ url_for('static', filename='images/Instagram.svg') }}" alt="instagram icon"
+            ><img
+              src="{{ url_for('static', filename='images/Instagram.svg') }}"
+              alt="instagram icon"
           /></a>
           <a href="http://www.facebook.com"
-            ><img src="{{ url_for('static', filename='images/Facebook.svg') }}" alt="facebook icon"
+            ><img
+              src="{{ url_for('static', filename='images/Facebook.svg') }}"
+              alt="facebook icon"
           /></a>
           <a href="http://www.twitter.com"
-            ><img src="{{ url_for('static', filename='images/Twitter.svg') }}" alt="twitter icon"
+            ><img
+              src="{{ url_for('static', filename='images/Twitter.svg') }}"
+              alt="twitter icon"
           /></a>
           <a href="http://www.linkedin.com"
-            ><img src="{{ url_for('static', filename='images/LinkedIn.svg') }}" alt="linkedin icon"
+            ><img
+              src="{{ url_for('static', filename='images/LinkedIn.svg') }}"
+              alt="linkedin icon"
           /></a>
         </div>
       </div>
@@ -128,7 +160,8 @@
         <div class="copyright">
           <p>
             Copyright © 2023
-            <a href="{{ url_for('home') }}">Agroboard Inc.</a> All Rights Reserved.
+            <a href="{{ url_for('home') }}">Agroboard Inc.</a> All Rights
+            Reserved.
           </p>
         </div>
         <div class="terms">

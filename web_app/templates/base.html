@@ -18,38 +18,36 @@
 
     <header>
       <a href="{{ url_for('home') }}"
-		 ><img src="{{ url_for('static', filename='images/Logo.svg') }}" alt="logo" class="logo"
+        ><img
+          src="{{ url_for('static', filename='images/Logo.svg') }}"
+          alt="logo"
+          class="logo"
       /></a>
       <nav>
         <ul>
-			<li class="menu-link"><a href="{{ url_for('home') }}">Home</a></li>
+          <li class="menu-link"><a href="{{ url_for('home') }}">Home</a></li>
           <li class="menu-link"><a href="{{ url_for('about') }}">About</a></li>
           <li class="menu-link"><a href="{{ url_for('news') }}">News</a></li>
-          <li class="menu-link"><a href="">Contact</a></li>
+          <li class="menu-link"><a href="#get-help">Contact</a></li>
           <li class="menu-link">
-			{% if current_user.is_anonymous %}
-			<a href="{{ url_for('login') }}"><button>Log In</button></a>
-			{% else %}
-			<a href="{{ url_for('logout') }}"><button>Log Out</button></a>
-			{% endif %}
+            {% if current_user.is_anonymous %}
+            <a href="{{ url_for('login') }}"><button>Log In</button></a>
+            {% else %}
+            <a href="{{ url_for('logout') }}"><button>Log Out</button></a>
+            {% endif %}
           </li>
         </ul>
       </nav>
     </header>
-    {% with messages = get_flashed_messages() %} {% if
-    messages %}
-    <ul>
-      {% for message in messages %}
-      <li>{{ message }}</li>
-      {% endfor %}
-    </ul>
-    {% endif %} {% endwith %} {% block content %} {% endblock %}
-
+    {% block content %} {% endblock %}
     <!--  THIS IS THE FOOTER SECTION -->
     <footer>
       <div class="links">
         <a href="{{ url_for('home') }}"
-		   ><img src="{{ url_for('static', filename='images/Logo.svg') }}" alt="logo" class="logo"
+          ><img
+            src="{{ url_for('static', filename='images/Logo.svg') }}"
+            alt="logo"
+            class="logo"
         /></a>
         <div class="useful-links">
           <h3>Useful Links</h3>
@@ -92,7 +90,8 @@
         <div class="copyright">
           <p>
             Copyright © 2023
-            <a href="{{ url_for('home') }}">Agroboard Inc.</a> All Rights Reserved.
+            <a href="{{ url_for('home') }}">Agroboard Inc.</a> All Rights
+            Reserved.
           </p>
         </div>
         <div class="terms">
