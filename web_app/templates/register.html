@@ -6,43 +6,40 @@
 
   <form action="" method="post" class="login-form" novalidate>
     {{ form.hidden_tag() }}
-	<div class="labels">
+    <div class="labels">
       <p>
         {{ form.username.label }}<br />
-        {{ form.username(size=32) }}
-		{% for error in form.username.errors %}
-		<span style="color: red;">[{{ error }}]</span>
-		{% endfor %}
+        {{ form.username(size=32) }} {% for error in form.username.errors %}
+        <span class="error">{{ error }}</span>
+        {% endfor %}
       </p>
     </div>
     <div class="labels">
       <p>
         {{ form.email.label }}<br />
-        {{ form.email(size=32) }}
-		{% for error in form.email.errors %}
-		<span style="color: red;">[{{ error }}]</span>
-		{% endfor %}
+        {{ form.email(size=32) }} {% for error in form.email.errors %}
+        <span class="error">{{ error }}</span>
+        {% endfor %}
       </p>
     </div>
     <div class="labels">
       <p>
         {{ form.password.label }}<br />
-        {{ form.password(size=32) }}
-		{% for error in form.password.errors %}
-        <span style="color: red;">[{{ error }}]</span>
+        {{ form.password(size=32) }} {% for error in form.password.errors %}
+        <span class="error">{{ error }}</span>
         {% endfor %}
       </p>
     </div>
     <div class="labels">
       <p>
         {{ form.confirm_password.label }}<br />
-        {{ form.confirm_password(size=32) }}
-		{% for error in form.confirm_password.errors %}
-		<span style="color: red;">[{{ error }}]</span>
-		{% endfor %}
+        {{ form.confirm_password(size=32) }} {% for error in
+        form.confirm_password.errors %}
+        <span class="error">{{ error }}</span>
+        {% endfor %}
       </p>
     </div>
-	<div class="labels"><p>{{ form.submit() }}</p></div>
+    <div class="labels"><p>{{ form.submit() }}</p></div>
   </form>
 </section>
 
