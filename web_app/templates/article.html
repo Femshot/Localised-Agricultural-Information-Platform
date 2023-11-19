@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="{{ url_for('static', filename='article.css') }}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='article.css') }}"
+    />
     <title>Agroboard | Articles</title>
   </head>
   <body>
@@ -11,7 +14,10 @@
 
     <header>
       <a href="{{ url_for('home') }}"
-		 ><img src="{{ url_for('static', filename='images/Logo.svg') }}" alt="logo" class="logo"
+        ><img
+          src="{{ url_for('static', filename='images/Logo.svg') }}"
+          alt="logo"
+          class="logo"
       /></a>
       <nav>
         <ul>
@@ -20,11 +26,11 @@
           <li class="menu-link"><a href="{{ url_for('news') }}">News</a></li>
           <li class="menu-link"><a href="#get-help">Contact</a></li>
           <li class="menu-link">
-			{% if current_user.is_anonymous %}
-			<a href="{{ url_for('login') }}"><button>Log In</button></a>
-			{% else %}
-			<a href="{{ url_for('logout') }}"><button>Log Out</button></a>
-			{% endif %}
+            {% if current_user.is_anonymous %}
+            <a href="{{ url_for('login') }}"><button>Log In</button></a>
+            {% else %}
+            <a href="{{ url_for('logout') }}"><button>Log Out</button></a>
+            {% endif %}
           </li>
         </ul>
       </nav>
@@ -34,7 +40,9 @@
 
     <section class="article">
       <a href="{{ url_for('news') }}"
-		 ><img src="{{ url_for('static', filename='images/back button.png') }}" alt="back button icon"
+        ><img
+          src="{{ url_for('static', filename='images/back button.png') }}"
+          alt="back button icon"
       /></a>
       <div class="heading">
         <h1>Do farmers deserve more in society?</h1>
@@ -42,12 +50,15 @@
         <div class="pubisher-card">
           <p>Publisher: <span>Ing. E. Quansah</span></p>
           <p>Published Oct. 5, 2023</p>
-		  <img src="{{ url_for('static', filename='images/publisher.png') }}" alt="publisher of article image" />
+          <img
+            src="{{ url_for('static', filename='images/publisher.png') }}"
+            alt="publisher of article image"
+          />
         </div>
       </div>
       <div class="body">
         <img
-			src="{{ url_for('static', filename='images/Mask group-1.png') }}"
+          src="{{ url_for('static', filename='images/Mask group-1.png') }}"
           alt="farmer harvesting in field"
         />
         <p class="source">Farmer smiling in field. Source: Amsterdam</p>
@@ -72,7 +83,7 @@
           Ipsum.
         </p>
         <img
-			src="{{ url_for('static', filename='images/Mask group-6.png') }}"
+          src="{{ url_for('static', filename='images/Mask group-6.png') }}"
           alt="group of farmers if field working"
         />
         <p class="source">
@@ -129,7 +140,10 @@
     <footer>
       <div class="links">
         <a href="{{ url_for('home') }}"
-		   ><img src="{{ url_for('static', filename='images/Logo.svg') }}" alt="logo" class="logo"
+          ><img
+            src="{{ url_for('static', filename='images/Logo.svg') }}"
+            alt="logo"
+            class="logo"
         /></a>
         <div class="useful-links">
           <h3>Useful Links</h3>
@@ -146,16 +160,24 @@
         <div class="social">
           <h3>Our Social Links</h3>
           <a href="http://www.instagram.com"
-			 ><img src="{{ url_for('static', filename='images/Instagram.svg') }}" alt="instagram icon"
+            ><img
+              src="{{ url_for('static', filename='images/Instagram.svg') }}"
+              alt="instagram icon"
           /></a>
           <a href="http://www.facebook.com"
-			 ><img src="{{ url_for('static', filename='images/Facebook.svg') }}" alt="facebook icon"
+            ><img
+              src="{{ url_for('static', filename='images/Facebook.svg') }}"
+              alt="facebook icon"
           /></a>
           <a href="http://www.twitter.com"
-			 ><img src="{{ url_for('static', filename='images/Twitter.svg') }}" alt="twitter icon"
+            ><img
+              src="{{ url_for('static', filename='images/Twitter.svg') }}"
+              alt="twitter icon"
           /></a>
           <a href="http://www.linkedin.com"
-			 ><img src="{{ url_for('static', filename='images/LinkedIn.svg') }}" alt="linkedin icon"
+            ><img
+              src="{{ url_for('static', filename='images/LinkedIn.svg') }}"
+              alt="linkedin icon"
           /></a>
         </div>
       </div>
@@ -164,7 +186,8 @@
         <div class="copyright">
           <p>
             Copyright © 2023
-            <a href="{{ url_for('home') }}">Agroboard Inc.</a> All Rights Reserved.
+            <a href="{{ url_for('home') }}">Agroboard Inc.</a> All Rights
+            Reserved.
           </p>
         </div>
         <div class="terms">
