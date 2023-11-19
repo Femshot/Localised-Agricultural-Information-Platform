@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='news.css') }}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='news.css') }}"
+    />
     <title>Agroboard | News</title>
   </head>
   <body>
@@ -11,20 +14,23 @@
 
     <header>
       <a href="{{ url_for('home') }}"
-        ><img src="{{ url_for('static', filename='images/Logo.svg') }}" alt="logo" class="logo"
+        ><img
+          src="{{ url_for('static', filename='images/Logo.svg') }}"
+          alt="logo"
+          class="logo"
       /></a>
       <nav>
         <ul>
           <li class="menu-link"><a href="{{ url_for('home') }}">Home</a></li>
           <li class="menu-link"><a href="{{ url_for('about') }}">About</a></li>
           <li class="menu-link"><a href="{{ url_for('news') }}">News</a></li>
-          <li class="menu-link"><a href="">Contact</a></li>
+          <li class="menu-link"><a href="#get-help">Contact</a></li>
           <li class="menu-link">
-			{% if current_user.is_anonymous %}
-			<a href="{{ url_for('login') }}"><button>Log In</button></a>
-			{% else %}
-			<a href="{{ url_for('logout') }}"><button>Log Out</button></a>
-			{% endif %}
+            {% if current_user.is_anonymous %}
+            <a href="{{ url_for('login') }}"><button>Log In</button></a>
+            {% else %}
+            <a href="{{ url_for('logout') }}"><button>Log Out</button></a>
+            {% endif %}
           </li>
         </ul>
       </nav>
@@ -41,13 +47,17 @@
           current info in order to make the right decisions today.
         </p>
         <div class="hero-button">
-          <a href="{{ url_for('weather') }}"><button>Weather Forecast</button></a>
-          <a href="{{ url_for('news') }}"><button class="no-fill">Agri-News</button></a>
+          <a href="{{ url_for('weather') }}"
+            ><button>Weather Forecast</button></a
+          >
+          <a href="{{ url_for('news') }}"
+            ><button class="no-fill">Agri-News</button></a
+          >
         </div>
       </div>
       <div class="hero-image">
         <img
-			src="{{ url_for('static', filename='images/farmer alert.png') }}"
+          src="{{ url_for('static', filename='images/farmer alert.png') }}"
           alt="hero image of farmer in field"
         />
       </div>
@@ -59,7 +69,10 @@
       <h2>Our Latest News and Expert Insights</h2>
       <div class="article-cards">
         <div class="card">
-			<img src="{{ url_for('static', filename='images/3-1.png') }}" alt="" />
+          <img
+            src="{{ url_for('static', filename='images/3-1.png') }}"
+            alt=""
+          />
           <a href="{{ url_for('article') }}"
             ><div class="publisher">
               <h3>Farm to Fork: Is it real?</h3>
@@ -68,7 +81,10 @@
           >
         </div>
         <div class="card">
-          <img src="{{ url_for('static', filename='images/3-2.png') }}" alt="" />
+          <img
+            src="{{ url_for('static', filename='images/3-2.png') }}"
+            alt=""
+          />
           <a href="{{ url_for('article') }}"
             ><div class="publisher">
               <h3>Backyard gardening, a guide</h3>
@@ -77,7 +93,10 @@
           >
         </div>
         <div class="card">
-          <img src="{{ url_for('static', filename='images/3-3.png') }}" alt="" />
+          <img
+            src="{{ url_for('static', filename='images/3-3.png') }}"
+            alt=""
+          />
           <a href="article.html"
             ><div class="publisher">
               <h3>Do farmers deserve more in society?</h3>
@@ -95,8 +114,11 @@
           >
         </div>
         <div class="card">
-			<img src="{{ url_for('static', filename='images/Mask group-1.png')
-					  }}" alt="" />
+          <img
+            src="{{ url_for('static', filename='images/Mask group-1.png')
+					  }}"
+            alt=""
+          />
           <a href="#"
             ><div class="publisher">
               <h3>What you get Wrong about seed nursery</h3>
@@ -105,8 +127,11 @@
           >
         </div>
         <div class="card">
-          <img src="{{ url_for('static', filename='images/Mask group-2.png')
-					}}" alt="" />
+          <img
+            src="{{ url_for('static', filename='images/Mask group-2.png')
+					}}"
+            alt=""
+          />
           <a href="#"
             ><div class="publisher">
               <h3>Corn field: risk or reward?</h3>
@@ -115,8 +140,11 @@
           >
         </div>
         <div class="card">
-          <img src="{{ url_for('static', filename='images/Mask group-3.png')
-					  }}" alt="" />
+          <img
+            src="{{ url_for('static', filename='images/Mask group-3.png')
+					  }}"
+            alt=""
+          />
           <a href="#"
             ><div class="publisher">
               <h3>State of organic vegetables</h3>
@@ -125,8 +153,11 @@
           >
         </div>
         <div class="card">
-          <img src="{{ url_for('static', filename='images/Mask group-4.png')
-					  }}" alt="" />
+          <img
+            src="{{ url_for('static', filename='images/Mask group-4.png')
+					  }}"
+            alt=""
+          />
           <a href="#">
             <div class="publisher">
               <h3>Farmers and Technology</h3>
@@ -135,8 +166,11 @@
           >
         </div>
         <div class="card">
-          <img src="{{ url_for('static', filename='images/Mask group-5.png')
-					  }}" alt="" />
+          <img
+            src="{{ url_for('static', filename='images/Mask group-5.png')
+					  }}"
+            alt=""
+          />
           <a href="#"
             ><div class="publisher">
               <h3>Team is Crucial to Farm Research</h3>
@@ -145,8 +179,11 @@
           >
         </div>
         <div class="card">
-          <img src="{{ url_for('static', filename='images/Mask group-6.png')
-					  }}" alt="" />
+          <img
+            src="{{ url_for('static', filename='images/Mask group-6.png')
+					  }}"
+            alt=""
+          />
           <a href="#"
             ><div class="publisher">
               <h3>Team is Crucial to Farm Research</h3>
@@ -155,8 +192,11 @@
           >
         </div>
         <div class="card">
-          <img src="{{ url_for('static', filename='images/Mask group-7.png')
-					  }}" alt="" />
+          <img
+            src="{{ url_for('static', filename='images/Mask group-7.png')
+					  }}"
+            alt=""
+          />
           <a href="#"
             ><div class="publisher">
               <h3>Team is Crucial to Farm Research</h3>
@@ -165,8 +205,11 @@
           >
         </div>
         <div class="card">
-          <img src="{{ url_for('static', filename='images/Mask group.png')
-					  }}" alt="" />
+          <img
+            src="{{ url_for('static', filename='images/Mask group.png')
+					  }}"
+            alt=""
+          />
           <a href="#"
             ><div class="publisher">
               <h3>Team is Crucial to Farm Research</h3>
@@ -183,7 +226,10 @@
     <footer>
       <div class="links">
         <a href="{{ url_for('home') }}"
-          ><img src="{{ url_for('static', filename='images/Logo.svg') }}" alt="logo" class="logo"
+          ><img
+            src="{{ url_for('static', filename='images/Logo.svg') }}"
+            alt="logo"
+            class="logo"
         /></a>
         <div class="useful-links">
           <h3>Useful Links</h3>
@@ -200,16 +246,24 @@
         <div class="social">
           <h3>Our Social Links</h3>
           <a href="http://www.instagram.com"
-            ><img src="{{ url_for('static', filename='images/Instagram.svg') }}" alt="instagram icon"
+            ><img
+              src="{{ url_for('static', filename='images/Instagram.svg') }}"
+              alt="instagram icon"
           /></a>
           <a href="http://www.facebook.com"
-            ><img src="{{ url_for('static', filename='images/Facebook.svg') }}" alt="facebook icon"
+            ><img
+              src="{{ url_for('static', filename='images/Facebook.svg') }}"
+              alt="facebook icon"
           /></a>
           <a href="http://www.twitter.com"
-            ><img src="{{ url_for('static', filename='images/Twitter.svg') }}" alt="twitter icon"
+            ><img
+              src="{{ url_for('static', filename='images/Twitter.svg') }}"
+              alt="twitter icon"
           /></a>
           <a href="http://www.linkedin.com"
-            ><img src="{{ url_for('static', filename='images/LinkedIn.svg') }}" alt="linkedin icon"
+            ><img
+              src="{{ url_for('static', filename='images/LinkedIn.svg') }}"
+              alt="linkedin icon"
           /></a>
         </div>
       </div>
@@ -218,7 +272,8 @@
         <div class="copyright">
           <p>
             Copyright © 2023
-            <a href="{{ url_for('home') }}">Agroboard Inc.</a> All Rights Reserved.
+            <a href="{{ url_for('home') }}">Agroboard Inc.</a> All Rights
+            Reserved.
           </p>
         </div>
         <div class="terms">
