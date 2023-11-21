@@ -15,14 +15,14 @@ Project management and UI/UX design because of previous experience and skills in
 Front-end Developer
 Front-end development due to expertise in HTML, CSS, and JavaScript.
 Back-end Developer
-Back-end development has experience with server-side technologies like Node.js and databases.
+Back-end development has experience with server-side technologies like Flask, Python and databases.
 OBJECTIVE
 Develop a localised agricultural information platform that provides farmers with easy access to relevant and timely agricultural information. The platform will be a web-application system
 
 ## TECHNOLOGIES
 
-Frontend: HTML, CSS, JavaScript
-Backend: Node.js,, and a database MYSQL.
+Frontend: HTML, CSS, JavaScript & jinja II
+Backend: Flask with Python, and a database MYSQL.
 Geolocation API: Use Google Maps API
 Messaging: Implement real-time chat using WebSocket or a third-party service like Firebase.
 Hosting: AWS
